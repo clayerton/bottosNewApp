@@ -1,0 +1,76 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'BottosNew' do
+    # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+    # use_frameworks!
+    
+    # Pods for BottosNew
+    
+    pod 'AFNetworking', '~> 3.0'
+    pod 'UMCCommon'
+    pod 'UMCSecurityPlugins'
+    pod 'UMCAnalytics'
+    # 集成微信(精简版0.2M)
+    pod 'UMCShare/Social/ReducedWeChat'
+    
+    
+    # this is very important to have!
+    rn_path = '../node_modules/react-native'
+    pod 'yoga', path: "../node_modules/react-native/ReactCommon/yoga/yoga.podspec"
+    pod 'React', path: rn_path, subspecs: [
+    'Core',
+    'RCTActionSheet',
+    'RCTAnimation',
+    'RCTGeolocation',
+    'RCTImage',
+    'RCTLinkingIOS',
+    'RCTNetwork',
+    'RCTSettings',
+    'RCTText',
+    'RCTVibration',
+    'RCTWebSocket'
+    ]
+
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
+  pod 'RNDeviceInfo', :path => '../node_modules/react-native-device-info'
+
+  pod 'RNI18n', :path => '../node_modules/react-native-i18n'
+
+  pod 'RNImageCropPicker', :path => '../node_modules/react-native-image-crop-picker'
+
+  pod 'react-native-image-picker', :path => '../node_modules/react-native-image-picker'
+
+  pod 'RNSound', :path => '../node_modules/react-native-sound'
+
+  pod 'react-native-spinkit', :path => '../node_modules/react-native-spinkit'
+
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'RNSVG', :path => '../node_modules/react-native-svg'
+
+  pod 'RNViewShot', :path => '../node_modules/react-native-view-shot'
+
+  pod 'BVLinearGradient', :path => '../node_modules/react-native-linear-gradient'
+
+  pod 'RNFS', :path => '../node_modules/react-native-fs'
+
+end
+
+# very important to have, unless you removed React dependencies for Libraries
+# and you rely on Cocoapods to manage it
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if target.name == "React"
+            target.remove_from_project
+        end
+    end
+end
+
+
+
+
+
+
+

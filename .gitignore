@@ -1,0 +1,27 @@
+# OSX
+#
+.DS_Store
+
+# node
+BottosNew/node_modules/
+BottosNew/npm-debug.log
+BottosNew/yarn-error.log
+BottosNew/package-lock.json
+BottosNew/yarn.lock
+
+# android studio
+.idea/
+BottosNew/android/build/
+BottosNew/android/.gradle
+BottosNew/android/app/build
+*.iml
+BottosNew/android/app/src/main/assets/
+
+# ios
+BottosNew/ios/Pods
+BottosNew/ios/Podfile.lock
+BottosNew/ios/ios_js
+BottosNew/ios/build
+
+# vscode
+.vscode

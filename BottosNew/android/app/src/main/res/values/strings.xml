@@ -1,0 +1,18 @@
+<resources>
+    <string moduleConfig="true" name="reactNativeCodePush_androidDeploymentKey">KZSMEjSZZ1y8uYqWNeL7vbp2mBR24ksvOXqog</string>
+    <string moduleConfig="true" name="reactNativeCodePush_androidServerURL">http://139.219.185.167:3000/</string>
+    <string name="app_name">瓦力社区</string>
+
+</resources>
+
+    <!--
+    CodePush Key
+    生产环境：
+    地址：http://139.219.185.167:3000
+    生产：KZSMEjSZZ1y8uYqWNeL7vbp2mBR24ksvOXqog
+    开发：6m7qCS4dOoDy0SVLoFFOzX1YZBMN4ksvOXqog
+
+    测试环境：
+    地址：http://139.219.139.201:3000
+    生产：hTPO1mQ7U0iZ6JGGrzibeeKFdkdw4ksvOXqog
+-->
